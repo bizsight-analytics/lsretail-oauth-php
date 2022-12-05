@@ -38,6 +38,7 @@ if ($err) {
     };
     echo "<pre>$jsonString</pre>";
 }
+?>
 
 <html>
 <head>
