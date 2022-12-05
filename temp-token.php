@@ -39,12 +39,3 @@ if ($err) {
     echo "<pre>$jsonString</pre>";
 }
 ?>
-
-<html>
-<head>
-	<title>Testing redirect url</title>
-</head>
-<body>
-	<h1>Testing redirect url</h1>
-</body>
-</html>
