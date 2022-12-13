@@ -9,7 +9,7 @@ $SquareClient_id = $config['SquareClientID'];
 $SquareAuthURL = "https://cloud.lightspeedapp.com/oauth/authorize.php?response_type=code&client_id={$SquareClient_id}&scope={$scope}";
 
 $SumUpClient_id = $config['SumUpClientID'];
-$SumUpAuthURL = "https://cloud.lightspeedapp.com/oauth/authorize.php?response_type=code&client_id={$SumUpClient_id}&scope={$scope}";
+$SumUpAuthURL = "https://api.sumup.com/authorize?response_type=code&client_id={$SumUpClient_id}&redirect_uri=https://bizsight-oauth-test.azurewebsites.net &scope=transactions.history";
 
 $ePOSNowClient_id = $config['ePOSNowClientID'];
 $ePOSNowAuthURL = "https://cloud.lightspeedapp.com/oauth/authorize.php?response_type=code&client_id={$ePOSNowClient_id}&scope={$scope}";
