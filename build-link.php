@@ -14,7 +14,7 @@ $SumUpAuthURL = "https://cloud.lightspeedapp.com/oauth/authorize.php?response_ty
 $ePOSNowClient_id = $config['ePOSNowClientID'];
 $ePOSNowAuthURL = "https://cloud.lightspeedapp.com/oauth/authorize.php?response_type=code&client_id={$ePOSNowClient_id}&scope={$scope}";
 
-if ($_POST['button'] == 'temptest'):
+if ($_POST['button'] == 'generate'):
 
 ?>
 
