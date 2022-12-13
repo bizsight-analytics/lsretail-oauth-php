@@ -41,6 +41,7 @@ if ($err) {
 ?>
 
 <?php  
+if ($_POST['button'] == 'temptest'):
     if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
          $url = "https://";   
     else  
