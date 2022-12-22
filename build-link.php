@@ -39,6 +39,5 @@ elseif ($_POST['button'] == 'SumUp'):
 	header("location: {$SumUpAuthURL}");
 elseif ($_POST['button'] == 'ePOS Now'):
 	header("location: {$ePOSNowAuthURL}");
-
-
+endif;
 ?>
