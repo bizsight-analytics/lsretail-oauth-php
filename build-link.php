@@ -1,11 +1,8 @@
 <?php
-  session_start();
-  if (empty($_SESSION['auth_state'])) {
-    $_SESSION['auth_state'] = bin2hex(random_bytes(32));
-  }
-?>
 
-<?php
+if (empty($_SESSION['auth_state'])) {
+  $_SESSION['auth_state'] = bin2hex(random_bytes(32));
+}
 
 $config = require 'config.php';
 $client_id = $config['clientID'];
