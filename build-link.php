@@ -11,7 +11,7 @@ $authURL = "https://cloud.lightspeedapp.com/oauth/authorize.php?response_type=co
 
 $SquareClient_id = $config['SquareClientID'];
 $SquareState= $_SESSION['auth_state'];
-$SquareAuthURL = "https://connect.squareup.com/oauth2/authorize&client_id={$SquareClient_id}&scope=ORDERS_READ&session=false&state={$SquareState}";
+$SquareAuthURL = "https://connect.squareup.com/oauth2/authorize?client_id={$SquareClient_id}&scope=ORDERS_READ&session=false&state={$SquareState}";
 
 $SumUpClient_id = $config['SumUpClientID'];
 $SumUpAuthURL = "https://api.sumup.com/authorize?response_type=code&client_id={$SumUpClient_id}&redirect_uri=https://bizsight-oauth-test.azurewebsites.net &scope=transactions.history";
