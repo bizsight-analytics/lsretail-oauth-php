@@ -6,7 +6,7 @@ $scope = $_POST['scope'];
 $authURL = "https://cloud.lightspeedapp.com/oauth/authorize.php?response_type=code&client_id={$client_id}&scope={$scope}";
 
 $SquareClient_id = $config['SquareClientID'];
-$SquareAuthURL = "https://connect.squareup.com/oauth2/authorize&client_id={$SquareClient_id}&scope=ORDERS_READ";
+$SquareAuthURL = "https://connect.squareup.com/oauth2/authorize&client_id={$SquareClient_id}&scope=ORDERS_READ&session=False";
 
 $SumUpClient_id = $config['SumUpClientID'];
 $SumUpAuthURL = "https://api.sumup.com/authorize?response_type=code&client_id={$SumUpClient_id}&redirect_uri=https://bizsight-oauth-test.azurewebsites.net &scope=transactions.history";
