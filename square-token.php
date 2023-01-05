@@ -1,6 +1,3 @@
-<?php
-  session_start();
-?>
 <link rel="stylesheet" href="public/style.css" type="text/css">
 <?php
 require 'vendor/autoload.php';
@@ -100,9 +97,3 @@ try {
 }
 
 ?>
-
-<html>
-  <Body>
-    Hello
-  </Body>
-</html>
