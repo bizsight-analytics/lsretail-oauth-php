@@ -15,17 +15,11 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::create(__DIR__);
 $dotenv->load();
 
-//Defining env variables for use 
-putenv("SQUARE_ACCESS_TOKEN=EAAAFMooUDzXZtk796RAvz6RingWorF0hFY0FyqJBbHXinOUB3i4TQTMEhypdNjX")
-putenv("SQ_ENVIRONMENT=PRODUCTION")
-putenv("SQ_APPLICATION_ID=sq0idp-9-rAt4JLTAEuJERapZ-CJQ")
-putenv("SQ_APPLICATION_SECRET=sq0csp-4JYXLDSU6qoNDTOg17v_uK0Sb81w_7DpS4SUFO1ZXpI")
-
 // The obtainOAuthToken function shows you how to obtain an OAuth access token
 // with the OAuth API with the authorization code returned to OAuth callback.
 function obtainOAuthToken($authorizationCode) {
   // Initialize Square PHP SDK OAuth API client.
-  $environment = getenv('SQ_ENVIRONMENT') == "sandbox" ? Environment::SANDBOX : Environment::PRODUCTION;
+  $environment = "PRODUCTION";
   $apiClient = new SquareClient([
     'environment' => $environment
   ]);
