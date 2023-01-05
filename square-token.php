@@ -1,5 +1,10 @@
 <link rel="stylesheet" href="public/style.css" type="text/css">
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 require 'vendor/autoload.php';
 require_once('messages.php');
 
