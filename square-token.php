@@ -15,6 +15,12 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::create(__DIR__);
 $dotenv->load();
 
+//Defining env variables for use 
+export SQUARE_ACCESS_TOKEN='EAAAFMooUDzXZtk796RAvz6RingWorF0hFY0FyqJBbHXinOUB3i4TQTMEhypdNjX'
+export SQ_ENVIRONMENT='PRODUCTION'
+export SQ_APPLICATION_ID='sq0idp-9-rAt4JLTAEuJERapZ-CJQ'
+export SQ_APPLICATION_SECRET='sq0csp-4JYXLDSU6qoNDTOg17v_uK0Sb81w_7DpS4SUFO1ZXpI'
+
 // The obtainOAuthToken function shows you how to obtain an OAuth access token
 // with the OAuth API with the authorization code returned to OAuth callback.
 function obtainOAuthToken($authorizationCode) {
