@@ -11,7 +11,7 @@
  * Include the Square Connect SDK loader
  * Update the line below to reference the install path of the Connect SDK
  */
-require_once 'vendor/autoload.php';
+require_once 'C:\Users\lukem\OneDrive\Documents\! Retail consultancy\OAuth web app git repo\lsretail-oauth-php\autoload.php';
 
 
 // {{{ constants
@@ -22,7 +22,7 @@ require_once 'vendor/autoload.php';
 * REPLACE_ME = a sandbox location ID from the application Locations tab
 */
 if (!defined('_SQ_SANDBOX_LOCATION_ID')) {
-  define('_SQ_SANDBOX_LOCATION_ID', "REPLACE_ME") ;
+  define('_SQ_SANDBOX_LOCATION_ID', "L3BA7XF1ABZ04") ;
 }
 
 /**
@@ -31,7 +31,7 @@ if (!defined('_SQ_SANDBOX_LOCATION_ID')) {
 * REPLACE_ME = a sandbox access token from the application Credentials tab
 */
 if (!defined('_SQ_SANDBOX_TOKEN')) {
-    define('_SQ_SANDBOX_TOKEN', "REPLACE_ME") ;
+    define('_SQ_SANDBOX_TOKEN', "EAAAFMooUDzXZtk796RAvz6RingWorF0hFY0FyqJBbHXinOUB3i4TQTMEhypdNjX") ;
 }
 
 /**
@@ -40,7 +40,7 @@ if (!defined('_SQ_SANDBOX_TOKEN')) {
 * REPLACE_ME = a sandbox application ID from the application Credentials tab
 */
 if (!defined('_SQ_SANDBOX_APP_ID')) {
-    define('_SQ_SANDBOX_APP_ID', "REPLACE_ME") ;
+    define('_SQ_SANDBOX_APP_ID', "sq0idp-9-rAt4JLTAEuJERapZ-CJQ") ;
 }
 
 /**
@@ -49,7 +49,7 @@ if (!defined('_SQ_SANDBOX_APP_ID')) {
 * OAuth tab
 */
 if (!defined('_SQ_SANDBOX_APP_SECRET')) {
-  define('_SQ_SANDBOX_APP_SECRET', "REPLACE_ME") ;
+  define('_SQ_SANDBOX_APP_SECRET', "sq0csp-4JYXLDSU6qoNDTOg17v_uK0Sb81w_7DpS4SUFO1ZXpI") ;
 }
 
 /**
@@ -66,7 +66,7 @@ if (!defined('_SQ_SANDBOX_DOMAIN')) {
 * REPLACE_ME = a location ID from the application Locations tab
 */
 if (!defined('_SQ_LOCATION_ID')) {
-  define('_SQ_LOCATION_ID', "REPLACE_ME") ;
+  define('_SQ_LOCATION_ID', "L3BA7XF1ABZ04") ;
 }
 
 /**
@@ -74,7 +74,7 @@ if (!defined('_SQ_LOCATION_ID')) {
 * REPLACE_ME = an application ID from the application Credentials tab
 */
 if (!defined('_SQ_APP_ID')) {
-    define('_SQ_APP_ID', "REPLACE_ME") ;
+    define('_SQ_APP_ID', "sq0idp-9-rAt4JLTAEuJERapZ-CJQ") ;
 }
 
 /**
@@ -82,7 +82,7 @@ if (!defined('_SQ_APP_ID')) {
 * REPLACE_ME = an application secrete from the application OAuth tab
 */
 if (!defined('_SQ_APP_SECRET')) {
-    define('_SQ_APP_SECRET', "REPLACE_ME") ;
+    define('_SQ_APP_SECRET', "sq0csp-4JYXLDSU6qoNDTOg17v_uK0Sb81w_7DpS4SUFO1ZXpI") ;
 }
 
 /**
@@ -91,7 +91,7 @@ if (!defined('_SQ_APP_SECRET')) {
 * REPLACE_ME = a production access token from the application Credentials tab
 */
 if (!defined('_SQ_TOKEN')) {
-  define('_SQ_TOKEN', "REPLACE_ME") ;
+  define('_SQ_TOKEN', "EAAAFMooUDzXZtk796RAvz6RingWorF0hFY0FyqJBbHXinOUB3i4TQTMEhypdNjX") ;
 }
 
 /**
