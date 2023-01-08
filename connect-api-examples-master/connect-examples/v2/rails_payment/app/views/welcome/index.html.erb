@@ -1,0 +1,33 @@
+<script type="text/javascript">
+  window.country = "<%= @country %>"
+  window.currency = "<%= @currency %>"
+  window.idempotencyKey = "<%= @idempotencyKey %>"
+</script>
+
+<form class="payment-form" id="fast-checkout">
+  <div class="wrapper">
+    <div id="apple-pay-button" alt="apple-pay" type="button"></div>
+    <div id="google-pay-button" alt="google-pay" type="button"></div>
+    <div class="border">
+      <span>OR</span>
+    </div>
+    <div id="ach-wrapper">
+      <label for="ach-account-holder-name">
+        Full Name
+      </label>
+      <input id="ach-account-holder-name" type="text" placeholder="Jane Doe" name="ach-account-holder-name" autocomplete="name"/>
+      <span id="ach-message"></span>
+      <button id="ach-button" type="button">
+        Pay with Bank Account
+      </button>
+    </div>
+    <div class="border">
+      <span>OR</span>
+    </div>
+    <div id="card-container"></div>
+    <button id="card-button" type="button">
+      Pay with Card
+    </button>
+    <span id="payment-flow-message"></span>
+  </div>
+</form>
