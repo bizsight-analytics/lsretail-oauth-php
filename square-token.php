@@ -1,9 +1,11 @@
-<?php
-  session_start();
-?>
 <link rel="stylesheet" href="public/style.css" type="text/css">
 <?php
-require 'vendor/autoload.php';
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+require 'autoload.php';
 require_once('messages.php');
 
 use Square\Exceptions\ApiException;
@@ -19,7 +21,7 @@ $dotenv->load();
 // with the OAuth API with the authorization code returned to OAuth callback.
 function obtainOAuthToken($authorizationCode) {
   // Initialize Square PHP SDK OAuth API client.
-  $environment = getenv('SQ_ENVIRONMENT') == "sandbox" ? Environment::SANDBOX : Environment::PRODUCTION;
+  $environment = "PRODUCTION";
   $apiClient = new SquareClient([
     'environment' => $environment
   ]);
