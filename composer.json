@@ -1,6 +1,6 @@
 {
     "name": "bizight-analytics/lsretail-oauth-php",
     "require": {
-        "vlucas/phpdotenv": "4.0.*"
+        "vlucas/phpdotenv": "v4.0.0"
     }
 }
