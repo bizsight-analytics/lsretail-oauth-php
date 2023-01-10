@@ -13,11 +13,16 @@ class ComposerStaticInit01475fb0387d78d365f90ae1b28b229b
     );
 
     public static $prefixLengthsPsr4 = array (
+        'a' => 
+        array (
+            'apimatic\\jsonmapper\\' => 20,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Square\\' => 7,
         ),
         'P' => 
         array (
@@ -34,6 +39,10 @@ class ComposerStaticInit01475fb0387d78d365f90ae1b28b229b
     );
 
     public static $prefixDirsPsr4 = array (
+        'apimatic\\jsonmapper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/apimatic/jsonmapper/src',
+        ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
@@ -46,6 +55,10 @@ class ComposerStaticInit01475fb0387d78d365f90ae1b28b229b
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Square\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/square/square/src',
+        ),
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
@@ -57,6 +70,16 @@ class ComposerStaticInit01475fb0387d78d365f90ae1b28b229b
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'U' => 
+        array (
+            'Unirest\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/apimatic/unirest-php/src',
+            ),
         ),
     );
 
@@ -74,6 +97,7 @@ class ComposerStaticInit01475fb0387d78d365f90ae1b28b229b
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit01475fb0387d78d365f90ae1b28b229b::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit01475fb0387d78d365f90ae1b28b229b::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit01475fb0387d78d365f90ae1b28b229b::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit01475fb0387d78d365f90ae1b28b229b::$classMap;
 
         }, null, ClassLoader::class);

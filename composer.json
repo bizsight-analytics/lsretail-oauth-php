@@ -2,6 +2,6 @@
     "name": "bizight-analytics/lsretail-oauth-php",
     "require": {
         "vlucas/phpdotenv": "^5.5",
-        "square/square": "*"
+        "square/square": "17.1.0.20220120"
     }
 }
