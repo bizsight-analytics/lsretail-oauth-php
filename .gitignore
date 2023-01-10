@@ -2,3 +2,7 @@
 .phpintel*
 
 config.php
+
+.env
+
+.env.example

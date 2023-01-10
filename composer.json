@@ -1,0 +1,6 @@
+{
+    "name": "bizight-analytics/lsretail-oauth-php",
+    "require": {
+        "vlucas/phpdotenv":
+    }
+}
