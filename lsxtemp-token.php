@@ -13,7 +13,7 @@ $postFields = [
     'client_id' => $config['lsxClientID'],
     'client_secret' => $config['lsxClientSecret'],
     'grant_type' => 'authorization_code',
-    'redirect_url' => 'https://bizsight-oauth-test.azurewebsites.net/lsxtemp-token.php'
+    'redirect_uri' => 'https://bizsight-oauth-test.azurewebsites.net/lsxtemp-token.php'
 ];
 
 $curl = curl_init();
