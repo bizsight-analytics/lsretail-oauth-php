@@ -31,18 +31,34 @@ $response = curl_exec($curl);
 $responseObj = json_decode($response);
 $jsonString = json_encode($responseObj, JSON_PRETTY_PRINT);
 $err = curl_error($curl);
-echo "$response";
 
 curl_close($curl);
 
-if ($err) {
-    echo "cURL Error #:" . $err;
-} else {
-    if (array_key_exists('access_token', $responseObj)) {
-        echo "<h2>Access Token Returned</h2>";
-    } else {
-        echo "<h2>It looks like there was an error.</h2>";
-    };
-    echo "<pre>$jsonString</pre>";
-}
+$vars=extract($responseObj);
+$tokenURL2 = "https://{$domainPrefix}.vendhq.com/api/1.0/token";
+$postFields2 = [
+    'refresh_token' => $refresh_token,
+    'client_id' => $config['lsxClientID'],
+    'client_secret' => $config['lsxClientSecret'],
+    'grant_type' => 'refresh_token'
+];
+
+$curl2 = curl_init();
+curl_setopt_array($curl, array(
+    CURLOPT_URL => $tokenURL2,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_CUSTOMREQUEST => "POST",
+    CURLOPT_POSTFIELDS => $postFields2
+));
+
+$response2 = curl_exec($curl2);
+$responseObj2 = json_decode($response);
+$jsonString2 = json_encode($responseObj, JSON_PRETTY_PRINT);
+$err2 = curl_error($curl);
+print($response2);
+
+curl_close($curl);
 ?>
