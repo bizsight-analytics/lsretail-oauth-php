@@ -47,5 +47,7 @@ elseif ($_POST['button'] == 'SumUp'):
 	header("location: {$SumUpAuthURL}");
 elseif ($_POST['button'] == 'ePOS Now'):
 	header("location: {$ePOSNowAuthURL}");
+elseif ($_POST['button'] == 'Lightspeed X'):
+	header("location: {$lsxAuthURL}");
 endif;
 ?>
