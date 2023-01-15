@@ -19,6 +19,9 @@ $SumUpAuthURL = "https://api.sumup.com/authorize?response_type=code&client_id={$
 $ePOSNowClient_id = $config['ePOSNowClientID'];
 $ePOSNowAuthURL = "https://cloud.lightspeedapp.com/oauth/authorize.php?response_type=code&client_id={$ePOSNowClient_id}&scope={$scope}";
 
+$lsxClientID = $config['lsxClientID'];
+$lsxAuthURL = "https://secure.vendhq.com/connect?response_type=code&client_id={$lsxClientID}&redirect_uri=https://bizsight-oauth-test.azurewebsites.net/lsxtemp-token.php&state=state";
+
 if ($_POST['button'] == 'generate'):
 
 ?>

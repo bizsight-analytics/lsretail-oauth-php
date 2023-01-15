@@ -9,7 +9,9 @@ return [
 	'SumUpClientID' => 'cc_classic_0xmLAcClz8w6BTNIbLRowEu9Ottdv',
 	'SumUpClientSecret' => 'cc_sk_classic_Kw56TdJnUzP2Xv1QPXu9Bi7nyIUCiZ5GPAx62yUPon89wWJ3eN',
 	'ePOSNowClientID' => '',
-	'ePOSNowClientSecret' => ''
+	'ePOSNowClientSecret' => '',
+	'lsxClientID' => 'RbuD3biYyOawsKqBPlrb2wMgS1HGMpQu',
+	'lsxClientSecret' => 'lWKUVKgdXw6tM6CsKBxgQZIFvVQuk6CZ'
 ];
 
 ?>

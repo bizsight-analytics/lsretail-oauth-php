@@ -5,13 +5,15 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $config = require 'config.php';
-$tokenURL = "https://cloud.lightspeedapp.com/oauth/access_token.php";
 $tempToken = $_GET['code'];
+$domainPrefix = $_GET['domain_prefix'];
+$tokenURL = "https://{$domainPrefix}.vendhq.com/api/1.0/token";
 $postFields = [
-    'client_id' => $config['clientID'],
-    'client_secret' => $config['clientSecret'],
     'code' => $tempToken,
-    'grant_type' => 'authorization_code'
+    'client_id' => $config['lsxClientID'],
+    'client_secret' => $config['lsxClientSecret'],
+    'grant_type' => 'authorization_code',
+    'redirect_url' => 'https://bizsight-oauth-test.azurewebsites.net/lsxtemp-token.php'
 ];
 
 $curl = curl_init();
