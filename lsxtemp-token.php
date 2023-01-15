@@ -34,7 +34,7 @@ $err = curl_error($curl);
 
 curl_close($curl);
 
-$vars=extract($responseObj);
+$refresh_token = $responseObj->refresh_token;
 $tokenURL2 = "https://{$domainPrefix}.vendhq.com/api/1.0/token";
 $postFields2 = [
     'refresh_token' => $refresh_token,
