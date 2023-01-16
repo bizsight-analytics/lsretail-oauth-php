@@ -6,3 +6,5 @@ config.php
 .env
 
 .env.example
+
+config.php
