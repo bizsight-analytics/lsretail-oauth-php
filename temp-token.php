@@ -51,7 +51,7 @@ if ($err) {
     <body>
 <h1>BIZSIGHT</h1>
 	<div class="box">
-	<p id="desc">The following tokens are used by Bizsight to access you account. Please keep them safe and email a copy to info@bizsight.co.uk</p>
+	<p id="desc">The following tokens are used by Bizsight to access your account. Please keep them safe and email a copy to info@bizsight.co.uk</p>
     </div>
 <style>
     h1 {color:White; text-align: center; background-color:black; height:80px; font-size: 60px;}
