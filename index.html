@@ -4,31 +4,34 @@
 	<title>Lightspeed Retail OAuth Connector</title>
 </head>
 <body>
-	<img src="lightspeed 2.png" alt="Bizsight" style="float:left;width:150px;height:30px;">
-	<h1>Bizsight Authentication</h1>
+<style>
+	h1 {color:White; text-align: center; background-color:black; height:80px; font-size: 60px;}
+	h2 {color:White; padding:3%; font-family:Verdana; width:600px; padding-left: 280px; font-size: 30px; padding-bottom: 0px;}
+	.box {border:2px solid rgb(83, 154, 83); width:500px; margin:auto; border-radius: 10px; text-align: center; padding-top:10px; padding-bottom: 10px; padding-left: 30px; padding-right: 30px;}
+	.box p {color:white; font-size:18px; text-align:center}
+	body {background-color: rgb(27, 27, 27);}
+	div {text-align: center; padding:80px}
+	div button {background-color: rgb(83, 154, 83); color:white; padding: 10px 10px; font-size: 18px; transition-duration: 0.4s; border-radius: 10px; width:190px}
+	div button:hover {background-color:rgb(130, 205, 130);}
+</style>	
+	<h1>BIZSIGHT</h1>
+	<div class="box">
+	<p id="desc">Select your POS software and sign in to authenticate</p>
+    </div>
+	<h2>Bridging the analytic gap between large and small retailers</h2>
 	<form action="build-link.php" method="post">
-		<!-- <div>
-			<label for="client_id">Client ID</label>
-			<input type="text" name="client_id" />
-		</div> -->
 		<div>
-			<label for="scope">Scope</label>
-			<input type="" name="scope" />
-		</div>
-		<div class="button">
-			<button type="submit" name="button" value="generate">Generate URL</button>
 		<class="button">
 			<button type="submit" name="button" value="Lightspeed">Lightspeed R-Series</button>
 		<class="button">
 			<button type="submit" name="button" value="Lightspeed X">Lightspeed X-Series</button>
 		<class="button">
-			<button type="submit" name="button" value="Square">Square</button>
+			<button type="submit" name="button" value="Square">Square Up</button>
 		<class="button" >
 			<button type="submit" name="button" value="SumpUp">SumUp</button>
 		<class="button">
 			<button type="submit" name="button" value="ePOS Now">ePOS Now</button>
 		</div>
 	</form>
-	<p>For help, please contact info@bizsight.co.uk</a></p>
 </body>
 </html>
