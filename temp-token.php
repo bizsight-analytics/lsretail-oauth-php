@@ -44,3 +44,20 @@ if ($err) {
     echo "<pre>$jsonString</pre>";
 }
 ?>
+<html>
+<head>
+	<title>Bizsight OAuth</title>
+</head>
+    <body>
+<h1>BIZSIGHT</h1>
+	<div class="box">
+	<p id="desc">The following tokens are used by Bizsight to access you account. Please keep them safe and email a copy to info@bizsight.co.uk</p>
+    </div>
+<style>
+    h1 {color:White; text-align: center; background-color:black; height:80px; font-size: 60px;}
+	.box {border:2px solid rgb(83, 154, 83); width:500px; margin:auto; border-radius: 10px; text-align: center; padding-top:10px; padding-bottom: 10px; padding-left: 30px; padding-right: 30px;}
+	.box p {color:white; font-size:18px; text-align:center}
+	body {background-color: rgb(27, 27, 27);}
+</style>
+</body>
+</html>
