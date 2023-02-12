@@ -31,7 +31,8 @@ $jsonString = json_encode($responseObj, JSON_PRETTY_PRINT);
 $err = curl_error($curl);
 
 $convertToArrayObject = json_decode($response,true);
-$access_token = $convertToArrayObject[access_token];
+$key="access_token";
+$access_token = $convertToArrayObject[$key];
 
 curl_close($curl);
 
