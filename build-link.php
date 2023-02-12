@@ -6,8 +6,7 @@ if (empty($_SESSION['auth_state'])) {
 
 $config = require 'config.php';
 $client_id = $config['clientID'];
-$scope = $_POST['scope'];
-$authURL = "https://cloud.lightspeedapp.com/oauth/authorize.php?response_type=code&client_id={$client_id}&scope={$scope}";
+$authURL = "https://cloud.lightspeedapp.com/oauth/authorize.php?response_type=code&client_id={$client_id}&scope=employee:all";
 
 $SquareClient_id = $config['SquareClientID'];
 $SquareState= $_SESSION['auth_state'];

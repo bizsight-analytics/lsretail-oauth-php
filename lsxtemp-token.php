@@ -15,7 +15,7 @@ $postFields = [
     'grant_type' => 'authorization_code',
     'redirect_uri' => 'https://bizsight-oauth-test.azurewebsites.net/lsxtemp-token.php'
 ];
-
+ 
 $curl = curl_init();
 curl_setopt_array($curl, array(
     CURLOPT_URL => $tokenURL,
