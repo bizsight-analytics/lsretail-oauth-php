@@ -29,20 +29,12 @@ $response = curl_exec($curl);
 $responseObj = json_decode($response);
 $jsonString = json_encode($responseObj, JSON_PRETTY_PRINT);
 $err = curl_error($curl);
-echo "$response";
+
+$convertToArrayObject = json_decode($response,true);
+$access_token = $convertToArrayObject[access_token];
 
 curl_close($curl);
 
-if ($err) {
-    echo "cURL Error #:" . $err;
-} else {
-    if (array_key_exists('access_token', $responseObj)) {
-        echo "<h2>Access Token Returned</h2>";
-    } else {
-        echo "<h2>It looks like there was an error.</h2>";
-    };
-    echo "<pre>$jsonString</pre>";
-}
 ?>
 <html>
 <head>
@@ -51,7 +43,7 @@ if ($err) {
     <body>
 <h1>BIZSIGHT</h1>
 	<div class="box">
-	<p id="desc">The following tokens are used by Bizsight to access your account. Please keep them safe and email a copy to info@bizsight.co.uk</p>
+	<p id="desc">The following tokens are used to access the data in your POS account. The access token currently in your Azure data factory needs updating with this one and the run needs to be triggered within 30 minutes. <?php echo "$access_token" ?> </p>
     </div>
 <style>
     h1 {color:White; text-align: center; background-color:black; height:80px; font-size: 60px;}
