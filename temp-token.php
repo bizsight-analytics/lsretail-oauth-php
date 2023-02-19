@@ -1,9 +1,4 @@
 <?php
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 $config = require 'config.php';
 $tokenURL = "https://cloud.lightspeedapp.com/oauth/access_token.php";
 $tempToken = $_GET['code'];
@@ -44,11 +39,11 @@ curl_close($curl);
     <body>
 <h1>BIZSIGHT</h1>
 	<div class="box">
-	<p id="desc">The following token is used to access data in your ePOS account. The access token currently in your Azure data factory needs to be updated with the following: 
+	<p id="desc">The access token currently in your Azure data factory needs to be updated with the following: Bearer
         
     <?php echo "$access_token" ?>
         
-    All API calls need to be triggered within 30 minutes before the token expires. <?php echo "$access_token" ?> </p>
+    . All API calls need to be triggered within 30 minutes before the token expires. <?php echo "$access_token" ?> </p>
     </div>
 <style>
     h1 {color:White; text-align: center; background-color:black; height:80px; font-size: 60px;}
