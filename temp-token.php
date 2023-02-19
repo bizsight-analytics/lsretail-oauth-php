@@ -44,7 +44,11 @@ curl_close($curl);
     <body>
 <h1>BIZSIGHT</h1>
 	<div class="box">
-	<p id="desc">The following tokens are used to access the data in your POS account. The access token currently in your Azure data factory needs updating with this one and the run needs to be triggered within 30 minutes. <?php echo "$access_token" ?> </p>
+	<p id="desc">The following token is used to access data in your ePOS account. The access token currently in your Azure data factory needs to be updated with the following: 
+        
+    <?php echo "$access_token" ?>
+        
+    All API calls need to be triggered within 30 minutes before the token expires. <?php echo "$access_token" ?> </p>
     </div>
 <style>
     h1 {color:White; text-align: center; background-color:black; height:80px; font-size: 60px;}
